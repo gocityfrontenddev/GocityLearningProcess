@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: royalblue;
+    color: white;
+}
+
+.logo:hover{
+    cursor:pointer;
+}
+
+.navbarLinks{
+    display:flex;
+    gap: 2.5rem;
+    
+}
+
+.searchIcon{
+    border-radius: 1rem;
+    background-color: transparent;
+    outline: 1px solid white;
+    outline-color: white;
+    padding:0.4rem;
+}
+
+.searchIcon:hover{
+    cursor:pointer;
+    color: rgb(48, 48, 153);
+    background-color: rgb(250, 250, 252);
+}
+
+.navbarLinks p:hover{
+    text-decoration: underline;
+    cursor:pointer
+}
+
+/* end of navbar css */
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: royalblue;
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.form label {
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+.container-input input {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    flex: 1;
+}
