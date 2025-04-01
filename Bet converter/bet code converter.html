@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet Code Converter</title>
+    <link rel="stylesheet" href="codestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bet Code Converter</h1>
+        <form id="convertForm">
+            <label for="fromPlatform">From:</label>
+            <select id="fromPlatform" required>
+                <option value="sportybet">SportyBet</option>
+                <option value="1xbet">1xBet</option>
+                <option value="betking">BetKing</option>
+            </select>
+
+            <label for="toPlatform">To:</label>
+            <select id="toPlatform" required>
+                <option value="sportybet">SportyBet</option>
+                <option value="1xbet">1xBet</option>
+                <option value="betking">BetKing</option>
+            </select>
+
+            <label for="betCode">Enter Bet Code:</label>
+            <input type="text" pattern="[A-Z]" id="betCode" placeholder="e.g., ABC" required>
+            <input type="text" onkeypress="return /[A-Za-z\s]/.test(event.key)">
+
+            <button type="submit">Convert</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

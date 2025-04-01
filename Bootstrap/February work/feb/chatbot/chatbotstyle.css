@@ -1,0 +1,81 @@
+/* Set background image */
+body {
+    background: url('lpo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat container */
+.chat-container {
+    width: 400px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+/* User messages */
+.user-message {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    align-self: flex-end;
+    margin: 5px 0;
+}
+
+/* Bot messages */
+.bot-message {
+    background: #e0e0e0;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    align-self: flex-start;
+    margin: 5px 0;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
