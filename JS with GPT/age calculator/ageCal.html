@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="ageCal.css">
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="light">
+
+  <div class="container">
+    <h1><i class="fas fa-calculator"></i> Age Calculator</h1>
+
+    <div class="input-group">
+      <label for="birthYear"><i class="fas fa-calendar-alt"></i> Enter your birth year:</label><br>
+      <input type="number" id="birthYear" placeholder="e.g., 2000">
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculateAge()"><i class="fas fa-hourglass-start"></i> Calculate Age</button>
+      <button onclick="resetCalculator()"><i class="fas fa-redo"></i> Reset</button>
+    </div>
+
+    <p id="result"></p>
+
+    <div class="dark-toggle">
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch" onchange="toggleDarkMode()">
+        <span class="slider round"></span>
+      </label>
+      <p>Toggle Mode</p>
+    </div>
+  </div>
+
+  <script src="ageCal.js"></script>
+</body>
+</html>

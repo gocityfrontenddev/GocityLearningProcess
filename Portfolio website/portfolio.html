@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="img/logo1.png" type="image/png">
+    <script src="https://kit.fontawesome.com/e0ac89169d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src ="img/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    FrontEnd Developer
+                    <h1>Hi, I'm <span>Ofonime</span> <br>Ufot from Nigeria</h1>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------about--------------- -->
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+                <img src="img/model.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed expedita quam dolores consequatur nihil magnam unde excepturi provident ex, molestiae deleniti illo illum! Impedit maiores nulla commodi? Deleniti, consequuntur?
+                    Dignissimos dicta dolorum illum porro doloremque! Doloremque eveniet amet quidem asperiores libero voluptatem officia ea, odit adipisci facere, nam quia dolor facilis dicta eius inventore soluta! Magni neque totam labore!
+                    Hic, inventore, minima earum perferendis, suscipit minus ad rerum iusto animi veniam nisi nesciunt corrupti deserunt ea cupiditate voluptas! Ducimus a nihil recusandae fugiat impedit aliquam quod neque reprehenderit praesentium.
+                    Labore nesciunt voluptatibus non illum repellat facilis. Cupiditate voluptas doloremque deleniti numquam ducimus commodi totam quis dolorem vero omnis, dignissimos itaque autem eaque sunt enim impedit, amet, praesentium at voluptate!
+                    Magni quisquam quasi provident ad libero. Vel ratione deserunt fugit odio adipisci nostrum eligendi placeat minus at, illo dolore? Aspernatur nobis fugit unde? Dolore reprehenderit ullam nulla temporibus voluptates rerum.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UIUX</span><br>Designing Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android and IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Frontend Web Development at Gocity</li>
+                        <li><span>2019 - 2021</span><br>Graphics Design at Smartiz</li>
+                        <li><span>2017 -2019</span><br>UI/UX Design Training at Daverze</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Frontend Web Development at Gocity</li>
+                        <li><span>2018 - 2024</span><br>B.Eng from UNIUYO</li>
+                        <li><span>2009 -2015</span><br>WASSCE</li>
+                    </ul>
+                </div>
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <!-- -----------------------services------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nostrum officia eius? At ratione neque magni, beatae nemo consectetur veritatis. Assumenda temporibus harum similique autem nam possimus enim, cupiditate a?
+                Aliquam voluptatibus illum recusandae corrupti perferendis? Iste odit modi, repudiandae delectus suscipit necessitatibus corporis doloremque iusto reprehenderit a sint laboriosam ut ad vel quae esse facere odio! Cupiditate, voluptate aliquam.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nostrum officia eius? At ratione neque magni, beatae nemo consectetur veritatis. Assumenda temporibus harum similique autem nam possimus enim, cupiditate a?
+                Aliquam voluptatibus illum recusandae corrupti perferendis? Iste odit modi, repudiandae delectus suscipit necessitatibus corporis doloremque iusto reprehenderit a sint laboriosam ut ad vel quae esse facere odio! Cupiditate, voluptate aliquam.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nostrum officia eius? At ratione neque magni, beatae nemo consectetur veritatis. Assumenda temporibus harum similique autem nam possimus enim, cupiditate a?
+                Aliquam voluptatibus illum recusandae corrupti perferendis? Iste odit modi, repudiandae delectus suscipit necessitatibus corporis doloremque iusto reprehenderit a sint laboriosam ut ad vel quae esse facere odio! Cupiditate, voluptate aliquam.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------My Work------------------------ -->
+
+<script src="portfolio.js"></script>
+
+</body>
+</html>

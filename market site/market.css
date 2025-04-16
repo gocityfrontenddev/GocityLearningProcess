@@ -1,0 +1,124 @@
+/* Define earth-tone color variables */
+:root {
+    --earth-brown: #8d6e63;       /* For header/nav background */
+    --earth-green: #a5d6a7;       /* For cart and admin background */
+    --earth-yellow: #fff176;      /* For buttons */
+    --earth-orange: #ffcc80;      /* For hero background */
+    --earth-background: #f1f8e9;  /* General page background */
+  }
+  
+  /* Apply base styles to the page */
+  body {
+    margin: 0;  /* Remove default margin */
+    font-family: Arial, sans-serif;  /* Set font */
+    background-color: var(--earth-background);  /* Use light earth tone for bg */
+    color: #333;  /* Standard dark text color */
+  }
+  
+  /* Style the top header */
+  header {
+    background-color: var(--earth-brown);  /* Brown background */
+    color: white;  /* White text */
+    padding: 1em;  /* Space around content */
+    display: flex;  /* Arrange logo and nav side by side */
+    justify-content: space-between;  /* Space between items */
+    align-items: center;  /* Center items vertically */
+  }
+  
+  /* Logo text */
+  .logo {
+    font-size: 1.5em;  /* Larger text */
+    font-weight: bold;  /* Bold text */
+  }
+  
+  /* Remove default list styling and style nav links */
+  nav ul {
+    list-style: none;  /* No bullets */
+    display: flex;  /* Horizontal list */
+    gap: 1em;  /* Space between items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Nav link styling */
+  nav a {
+    color: white;  /* White text */
+    text-decoration: none;  /* Remove underline */
+  }
+  
+  /* Hero/banner section */
+  .hero {
+    background-color: var(--earth-orange);  /* Warm background */
+    padding: 2em;  /* Space inside */
+    text-align: center;  /* Center text */
+  }
+  
+  /* Shared padding for main sections */
+  .products, .cart, .admin {
+    padding: 2em;
+  }
+  
+  /* Layout for product grid */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1em;  /* Gap between products */
+    margin-top: 1em;
+  }
+  
+  /* Style for individual product cards */
+  .product {
+    background-color: white;  /* Card bg */
+    padding: 1em;
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 8px;  /* Rounded corners */
+    text-align: center;
+  }
+  
+  /* Product images */
+  .product img {
+    width: 100%;  /* Fill card width */
+    height: 150px;
+    object-fit: cover;  /* Maintain aspect ratio */
+    border-radius: 4px;
+  }
+  
+  /* Distinct styling for cart and admin panels */
+  .cart, .admin {
+    background-color: var(--earth-green);  /* Green bg */
+    border-radius: 8px;  /* Rounded corners */
+    margin: 2em;
+  }
+  
+  /* Space above cart items list */
+  #cartItems {
+    margin-top: 1em;
+  }
+  
+  /* Layout for admin form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;  /* Space between form elements */
+    max-width: 300px;
+  }
+  
+  /* Inputs and button styling */
+  input, button {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  /* Style the Add Product button */
+  button {
+    background-color: var(--earth-yellow);  /* Yellow background */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #fbc02d;  /* Darker yellow */
+  }
+  

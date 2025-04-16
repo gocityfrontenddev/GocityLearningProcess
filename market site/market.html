@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshCart - Food Shopping</title>
+  <link rel="stylesheet" href="market.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">FreshCart</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#admin">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to FreshCart</h1>
+    <p>Fresh, organic and local produce delivered to your door.</p>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="products">
+    <h2>Shop Foodstuffs</h2>
+    <div class="product-list" id="productList">
+      <!-- Products will be populated by JS -->
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p id="cartTotal">Total: $0.00</p>
+  </section>
+
+  <!-- Admin Section -->
+  <section id="admin" class="admin">
+    <h2>Admin Panel</h2>
+    <form id="addProductForm">
+      <input type="text" placeholder="Name" id="productName" required />
+      <input type="number" placeholder="Price" id="productPrice" required />
+      <input type="text" placeholder="Image URL" id="productImage" required />
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <script src="market.js"></script>
+</body>
+</html>
